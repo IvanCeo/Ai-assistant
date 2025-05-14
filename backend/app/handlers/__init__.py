@@ -1,4 +1,5 @@
 from .start_handler import register_start
-from .echo_handler import register_echo
+from .logging_handler import register_logging
+from .chat_handler import register_chat
 
-__all__ = ['register_start', 'register_echo']
+__all__ = ['register_start', 'register_chat', 'register_logging']
