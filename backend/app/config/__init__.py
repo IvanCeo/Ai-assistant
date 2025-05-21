@@ -1,1 +1,1 @@
-from .settings import TOKEN
+from .settings import API_KEY_TG_BOT

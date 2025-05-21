@@ -1,12 +1,12 @@
 from api import create_application
-from config import TOKEN
+from config import API_KEY_TG_BOT
 from handlers import register_start, register_chat, register_logging
 from utils import configure_logging
 
 def main() -> None:
     configure_logging()
 
-    application = create_application(TOKEN)
+    application = create_application(API_KEY_TG_BOT)
 
     # register_logging(application)
 
