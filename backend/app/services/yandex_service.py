@@ -1,6 +1,6 @@
 import os
 import requests
-from config.settings import YANDEX_API_KEY, YANDEX_MODEL_ID, YANDEX_API_URL, YANDEX_FOLDER_ID
+from backend.app.config.settings import YANDEX_API_KEY, YANDEX_MODEL_ID, YANDEX_API_URL, YANDEX_FOLDER_ID
 
 class YandexService:
     def complete(prompt: str) -> str:
