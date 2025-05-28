@@ -1,6 +1,6 @@
 from telegram import Update
 from telegram.ext import ContextTypes, MessageHandler, filters, Application
-from services.yandex_service import YandexService
+from backend.app.services.yandex_service import YandexService
 import logging
 
 logger = logging.getLogger(__name__)
@@ -24,3 +24,5 @@ def register_chat(app: Application):
         # Можно оставить в группе 1, чтобы логирование (группа 0) шло раньше
         group=1
     )
+
+

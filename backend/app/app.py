@@ -1,5 +1,5 @@
 from api import create_application
-from config import API_KEY_TG_BOT
+from backend.app.config import API_KEY_TG_BOT
 from handlers import register_start, register_chat, register_logging
 from utils import configure_logging
 
