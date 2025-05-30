@@ -17,9 +17,9 @@ class YandexService():
     
         context_prompt = YandexService.build_context_prompt(prompt, new_info)
         
-        messages = context + [
-            {"role": "system", "text": prompt + context_prompt}
-        ]
+        # messages = context + [
+        #     {"role": "system", "text": context_prompt}
+        # ]
         
         
         data = {}
@@ -29,8 +29,9 @@ class YandexService():
         data["completionOptions"] = {"temperature": 0.3, "maxTokens": 1000}
         # Указываем контекст для модели
         data["messages"] = [
-            {"role": "user", "text": messages},
+            {"role": "user", "text": context_prompt},
         ]
+        print(data)
 
         response = requests.post(
             YANDEX_API_URL,
